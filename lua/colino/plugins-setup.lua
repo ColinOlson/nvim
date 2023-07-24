@@ -27,7 +27,7 @@ if not status then
 end
 
 return packer.startup(function(use)
-    
+
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
@@ -44,8 +44,9 @@ return packer.startup(function(use)
 
     use 'numToStr/Comment.nvim'
 
-    use 'nvim-tree/nvim-tree.lua'
-    use 'nvim-tree/nvim-web-devicons'
+    use 'preservim/nerdtree'
+    use 'ryanoasis/vim-devicons'
+    use 'tpope/vim-vinegar'
 
     use 'nvim-lualine/lualine.nvim'
 
@@ -55,6 +56,7 @@ return packer.startup(function(use)
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
 
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'

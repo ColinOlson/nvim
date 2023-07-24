@@ -20,7 +20,8 @@ k.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 k.set("n", "<leader>cc", "<Plug>(comment_toggle_linewise_current)")
 k.set("v", "<leader>cc", "<Plug>(comment_toggle_linewise_visual)")
 
-k.set("n", "<leader>q", ":NvimTreeToggle<CR>")
+k.set("n", "<leader>q", ":NERDTreeToggle<CR>")
+k.set("n", "<leader>Q", ":NERDTreeFind<CR>")
 
 k.set("n", "<leader>ff", "<cmd>Telescope current_buffer_fuzzy_find<CR>")
 k.set("n", "<leader> ",  "<cmd>Telescope find_files<CR>")
