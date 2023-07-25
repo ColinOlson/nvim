@@ -67,16 +67,27 @@ lspconfig["cssls"].setup({
   on_attach = on_attach,
 })
 
--- configure tailwindcss server
-lspconfig["tailwindcss"].setup({
+-- lspconfig["phpactor"].setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- })
+
+lspconfig["intelephense"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
+
+-- configure tailwindcss server
+-- lspconfig["tailwindcss"].setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- })
 
 lspconfig["jedi_language_server"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
+
 
 lspconfig["omnisharp"].setup({
   capabilities = capabilities,

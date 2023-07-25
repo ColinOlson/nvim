@@ -17,9 +17,6 @@ k.set("n", "<leader>tp", ":tabprevious<CR>")
 
 k.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
-k.set("n", "<leader>cc", "<Plug>(comment_toggle_linewise_current)")
-k.set("v", "<leader>cc", "<Plug>(comment_toggle_linewise_visual)")
-
 k.set("n", "<leader>q", ":NERDTreeToggle<CR>")
 k.set("n", "<leader>Q", ":NERDTreeFind<CR>")
 

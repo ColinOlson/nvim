@@ -1,7 +1,6 @@
 require("colino.plugins-setup")
 
 require("colino.plugins.comment")
--- require("colino.plugins.nvim-tree")
 require("colino.plugins.lualine")
 require("colino.plugins.telescope")
 require("colino.plugins.nvim-cmp")
