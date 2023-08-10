@@ -55,6 +55,8 @@ return packer.startup(function(use)
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
     use { 'nvim-telescope/telescope.nvim', branch = "0.1.x" }
 
+    use 'jlanzarotta/bufexplorer'
+
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
@@ -65,7 +67,7 @@ return packer.startup(function(use)
     use 'neovim/nvim-lspconfig'
 
     use 'hrsh7th/cmp-nvim-lsp'
-    use { 'glepnir/lspsaga.nvim', branch = "main" }
+    use 'nvimdev/lspsaga.nvim'
     use 'jose-elias-alvarez/typescript.nvim'
     use 'onsails/lspkind.nvim'
 
