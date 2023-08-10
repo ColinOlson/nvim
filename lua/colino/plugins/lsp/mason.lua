@@ -19,6 +19,7 @@ mason_lspconfig.setup({
         "tailwindcss",
         "tsserver",
         "omnisharp",
-        "dockerls"
+        "dockerls",
+        "docker_compose_language_service"
     }
 })
