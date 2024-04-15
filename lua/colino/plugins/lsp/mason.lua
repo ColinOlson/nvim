@@ -20,6 +20,7 @@ mason_lspconfig.setup({
         "tsserver",
         "omnisharp",
         "dockerls",
-        "docker_compose_language_service"
+        "docker_compose_language_service",
+        "rust_analyzer"
     }
 })
