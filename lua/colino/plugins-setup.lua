@@ -48,6 +48,8 @@ return packer.startup(function(use)
     use 'ryanoasis/vim-devicons'
     use 'tpope/vim-vinegar'
 
+    use 'NoahTheDuke/vim-just'
+
     use 'nvim-lualine/lualine.nvim'
 
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -70,6 +72,9 @@ return packer.startup(function(use)
     use 'nvimdev/lspsaga.nvim'
     use 'jose-elias-alvarez/typescript.nvim'
     use 'onsails/lspkind.nvim'
+
+    use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
     use {
         'nvim-treesitter/nvim-treesitter',
