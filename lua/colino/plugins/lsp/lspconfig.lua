@@ -8,11 +8,6 @@ if not cmp_nvim_lsp_status then
     return
 end
 
-local typescript_setup, typescript = pcall(require, 'typescript')
-if not typescript_setup then
-    return
-end
-
 local k = vim.keymap
 
 local on_attach = function(client, bufnr)
@@ -31,10 +26,6 @@ local on_attach = function(client, bufnr)
     k.set("n", "<leader>dn", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
     k.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
     k.set("n", "<leader>o", "<cmd>Lspsaga outline<CR>", opts)
-
-    if client.name == "tsserver" then
-        k.set("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts)
-    end
 end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -47,47 +38,25 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- configure html server
 lspconfig["html"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure typescript server with plugin
-typescript.setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-  },
-})
-
--- configure css server
 lspconfig["cssls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
-
--- lspconfig["phpactor"].setup({
---   capabilities = capabilities,
---   on_attach = on_attach,
--- })
 
 lspconfig["intelephense"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
 
--- configure tailwindcss server
--- lspconfig["tailwindcss"].setup({
---   capabilities = capabilities,
---   on_attach = on_attach,
--- })
-
 lspconfig["jedi_language_server"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
-
 
 lspconfig["omnisharp"].setup({
   capabilities = capabilities,

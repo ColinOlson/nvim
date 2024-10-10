@@ -70,11 +70,10 @@ return packer.startup(function(use)
 
     use 'hrsh7th/cmp-nvim-lsp'
     use 'nvimdev/lspsaga.nvim'
-    use 'jose-elias-alvarez/typescript.nvim'
     use 'onsails/lspkind.nvim'
 
     use 'mfussenegger/nvim-dap'
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
 
     use {
         'nvim-treesitter/nvim-treesitter',
