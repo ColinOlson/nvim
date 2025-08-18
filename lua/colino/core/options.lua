@@ -26,8 +26,8 @@ opt.splitright = true
 opt.splitbelow = true
 opt.hidden = true
 
--- Turn off swp, swo backup files
-
+-- Turn off swap and backup files
+opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
 
