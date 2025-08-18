@@ -12,7 +12,7 @@ sitter.setup({
         "markdown_inline"
     },
     sync_install = false,
-    auth_install = true,
+    auto_install = true,
     highlight = {
         enable = true
     }
